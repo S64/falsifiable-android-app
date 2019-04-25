@@ -40,5 +40,9 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
+
+        KeyDumper.dump(
+            findViewById(R.id.keydump)
+        )
     }
 }
