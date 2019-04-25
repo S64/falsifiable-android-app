@@ -32,17 +32,26 @@
                 android:background="#11000000"/>
 
     </ScrollView>
-    <LinearLayout
-            android:orientation="horizontal"
+
+    <ScrollView
             android:layout_width="0dp"
-            android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="8dp" android:id="@+id/linearLayout">
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                  android:text="Key: "/>
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_height="192dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/linearLayout">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:maxHeight="192dp"
+                      tools:layout_height="192dp"
+                      android:text="Key: "/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                   android:id="@+id/keydump" tools:text="keydump"/>
-    </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
